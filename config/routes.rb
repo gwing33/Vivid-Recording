@@ -1,4 +1,16 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :page_infos
+
+  map.resources :equipments
+
+  map.resources :categorys
+
+  map.resources :songs
+
+  map.resources :albums
+
+  map.resources :client
+
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
@@ -40,6 +52,12 @@ ActionController::Routing::Routes.draw do |map|
   # consider removing the them or commenting them out if you're using named routes and resources.
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
+  
+  map.connect 'services', :controller => 'home', :action => 'services'
+  map.connect 'equipment', :controller => 'home', :action => 'equipment'
+  map.connect 'media', :controller => 'home', :action => 'media'
+  map.connect 'clients', :controller => 'home', :action => 'clients'
+  map.connect 'contact', :controller => 'home', :action => 'contact'
   
   map.root :controller => 'home', :action => 'index'
 end

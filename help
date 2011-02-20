@@ -1,0 +1,8 @@
+Script started on Sun Feb 20 15:50:09 2011
+bash-3.2$ 
+bash-3.2$ quit
+bash: quit: command not found
+bash-3.2$ exit
+exit
+
+Script done on Sun Feb 20 15:50:16 2011

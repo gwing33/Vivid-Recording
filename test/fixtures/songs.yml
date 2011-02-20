@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  file_size: 1
+  album_id: 1
+  length: MyString
+
+two:
+  name: MyString
+  file_size: 1
+  album_id: 1
+  length: MyString

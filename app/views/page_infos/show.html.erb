@@ -1,0 +1,23 @@
+<p>
+  <b>Unique:</b>
+  <%=h @page_info.unique_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @page_info.name %>
+</p>
+
+<p>
+  <b>Page data:</b>
+  <%=h @page_info.page_data %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @page_info.type %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_info_path(@page_info) %> |
+<%= link_to 'Back', page_infos_path %>

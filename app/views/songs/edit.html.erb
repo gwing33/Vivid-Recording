@@ -1,0 +1,28 @@
+<h1>Editing songs</h1>
+
+<% form_for(@songs) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :file_size %><br />
+    <%= f.text_field :file_size %>
+  </p>
+  <p>
+    <%= f.label :album_id %><br />
+    <%= f.text_field :album_id %>
+  </p>
+  <p>
+    <%= f.label :length %><br />
+    <%= f.text_field :length %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @songs %> |
+<%= link_to 'Back', songs_path %>
