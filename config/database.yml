@@ -20,7 +20,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: mysql
+  encoding: utf8
+  reconnect: false
+  database: gwing33
   pool: 5
-  timeout: 5000
+  username: gwing33
+  password: g33Lsvt7ee11
+  socket: /tmp/mysql.sock
