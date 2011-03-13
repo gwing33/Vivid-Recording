@@ -2,8 +2,13 @@
 <html>
   <head>
     <title>Vivid Recording Studio</title>
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-  	<script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.js"%3E%3C/script%3E'))</script>
+  	<script>!window.jQuery && document.write(unescape('%3Cscript src="/js/jquery.js"%3E%3C/script%3E'))</script>
+  	<script src="/js/underscore.js"></script>
+  	<script src="/js/backbone.js"></script>
+  	<script src="/js/app.js"></script>
+  	
   	<link rel="stylesheet" href="/css/screen.css" type="text/css" />
   </head>
 
@@ -77,37 +82,37 @@
         
         <ul class='nav'>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'index') ? 'current' : ''; ?>' href='<?php echo URL::site('/'); ?>'>
+            <a class='<?php echo (Request::current()->action() == 'index') ? 'current' : ''; ?>' href='#<?php echo URL::site('/'); ?>'>
               <span>Home</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'services') ? 'current' : ''; ?>' href='<?php echo URL::site('/services'); ?>'>
+            <a class='<?php echo (Request::current()->action() == 'services') ? 'current' : ''; ?>' href='#<?php echo URL::site('/services'); ?>'>
               <span>Services</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'equipment') ? 'current' : ''; ?>' href='<?php echo URL::site('/equipment'); ?>'>
+            <a class='<?php echo (Request::current()->action() == 'equipment') ? 'current' : ''; ?>' href='#<?php echo URL::site('/equipment'); ?>'>
               <span>Equipment</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'media') ? 'current' : ''; ?>' href='<?php echo URL::site('/media'); ?>'>
+            <a class='<?php echo (Request::current()->action() == 'media') ? 'current' : ''; ?>' href='#<?php echo URL::site('/media'); ?>'>
               <span>Media</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'clients') ? 'current' : ''; ?>' href='<?php echo URL::site('/clients'); ?>'>
+            <a class='<?php echo (Request::current()->action() == 'clients') ? 'current' : ''; ?>' href='#<?php echo URL::site('/clients'); ?>'>
               <span>Clients</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'contact') ? 'current' : ''; ?>' href='<?php echo URL::site('/contact'); ?>'>
+            <a class='<?php echo (Request::current()->action() == 'contact') ? 'current' : ''; ?>' href='#<?php echo URL::site('/contact'); ?>'>
               <span>Contact</span>
               <i></i>
             </a>
@@ -115,7 +120,9 @@
         </ul>
       </div>
       
-      <?php echo $yield; ?>
+      <div id='content'>
+        <?php echo $yield; ?>
+      </div>
     
     </div>
     
