@@ -82,37 +82,37 @@
         
         <ul class='nav'>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'index') ? 'current' : ''; ?>' href='#<?php echo URL::site('/'); ?>'>
+            <a id='index' class='<?php echo (Request::current()->action() == 'index') ? 'current' : ''; ?>' href='#<?php echo URL::site('/'); ?>'>
               <span>Home</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'services') ? 'current' : ''; ?>' href='#<?php echo URL::site('/services'); ?>'>
+            <a id='services' class='<?php echo (Request::current()->action() == 'services') ? 'current' : ''; ?>' href='#<?php echo URL::site('/services'); ?>'>
               <span>Services</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'equipment') ? 'current' : ''; ?>' href='#<?php echo URL::site('/equipment'); ?>'>
+            <a id='equipment' class='<?php echo (Request::current()->action() == 'equipment') ? 'current' : ''; ?>' href='#<?php echo URL::site('/equipment'); ?>'>
               <span>Equipment</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'media') ? 'current' : ''; ?>' href='#<?php echo URL::site('/media'); ?>'>
+            <a id='media' class='<?php echo (Request::current()->action() == 'media') ? 'current' : ''; ?>' href='#<?php echo URL::site('/media'); ?>'>
               <span>Media</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'clients') ? 'current' : ''; ?>' href='#<?php echo URL::site('/clients'); ?>'>
+            <a id='clients' class='<?php echo (Request::current()->action() == 'clients') ? 'current' : ''; ?>' href='#<?php echo URL::site('/clients'); ?>'>
               <span>Clients</span>
               <i></i>
             </a>
           </li>
           <li>
-            <a class='<?php echo (Request::current()->action() == 'contact') ? 'current' : ''; ?>' href='#<?php echo URL::site('/contact'); ?>'>
+            <a id='contact' class='<?php echo (Request::current()->action() == 'contact') ? 'current' : ''; ?>' href='#<?php echo URL::site('/contact'); ?>'>
               <span>Contact</span>
               <i></i>
             </a>
