@@ -103,7 +103,7 @@ Kohana::modules(array(
 	// 'codebench'  => MODPATH.'codebench',  // Benchmarking tool
 	'database'   => MODPATH.'database',   // Database access
 	// 'image'      => MODPATH.'image',      // Image manipulation
-	// 'orm'        => MODPATH.'orm',        // Object Relationship Mapping
+	'orm'        => MODPATH.'orm',        // Object Relationship Mapping
 	// 'unittest'   => MODPATH.'unittest',   // Unit testing
 	// 'userguide'  => MODPATH.'userguide',  // User guide and API documentation
 	));
@@ -117,17 +117,16 @@ Route::set('equipment', 'equipment')->defaults(array('controller' => 'welcome',	
 Route::set('media', 'media')->defaults(array('controller' => 'welcome',	'action' => 'media'));
 Route::set('clients', 'clients')->defaults(array('controller' => 'welcome',	'action' => 'clients'));
 Route::set('contact', 'contact')->defaults(array('controller' => 'welcome',	'action' => 'contact'));
-
 Route::set('admin', 'admin(/<action>(/<id>))')
 	->defaults(array(
 		'controller' => 'admin',
-		'action'     => 'index',
+		'action'     => 'login',
 	));
 
 Route::set('default', '(<controller>(/<action>(/<id>)))')
 	->defaults(array(
 		'controller' => 'welcome',
 		'action'     => 'index',
-	));
+  ));
 	
 

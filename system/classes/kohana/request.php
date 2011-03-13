@@ -680,8 +680,7 @@ class Kohana_Request implements Http_Request {
 		$this->_header = new Http_Header(array());
 
 		// Remove trailing slashes from the URI
-    $uri = trim($uri, '/');
-    $uri = trim($uri, 'index.php');
+    $uri = preg_replace('/\/index\.php/', '', $uri);
     $uri = trim($uri, '/');
 		// Detect protocol (if present)
 		/**
