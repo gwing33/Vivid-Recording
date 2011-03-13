@@ -9,8 +9,58 @@
 
   <body>
     
-    <?php echo $yield; ?>
+    <div class='app'>
+      <div class='header'>
+        <div id='logo'>
+          <img src='/img/vivid-recording-studio.png' />
+        </div>
+        
+        <div id='player'>
+        </div>
+        
+        <ul class='nav'>
+          <li>
+            <a class='<?php echo (Request::current()->action() == 'index') ? 'current' : ''; ?>' href='<?php echo URL::site('/'); ?>'>
+              <span>Home</span>
+              <i></i>
+            </a>
+          </li>
+          <li>
+            <a class='<?php echo (Request::current()->action() == 'services') ? 'current' : ''; ?>' href='<?php echo URL::site('/services'); ?>'>
+              <span>Services</span>
+              <i></i>
+            </a>
+          </li>
+          <li>
+            <a class='<?php echo (Request::current()->action() == 'equipment') ? 'current' : ''; ?>' href='<?php echo URL::site('/equipment'); ?>'>
+              <span>Equipment</span>
+              <i></i>
+            </a>
+          </li>
+          <li>
+            <a class='<?php echo (Request::current()->action() == 'media') ? 'current' : ''; ?>' href='<?php echo URL::site('/media'); ?>'>
+              <span>Media</span>
+              <i></i>
+            </a>
+          </li>
+          <li>
+            <a class='<?php echo (Request::current()->action() == 'clients') ? 'current' : ''; ?>' href='<?php echo URL::site('/clients'); ?>'>
+              <span>Clients</span>
+              <i></i>
+            </a>
+          </li>
+          <li>
+            <a class='<?php echo (Request::current()->action() == 'contact') ? 'current' : ''; ?>' href='<?php echo URL::site('/contact'); ?>'>
+              <span>Contact</span>
+              <i></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <?php echo $yield; ?>
     
+    </div>
     
   </body>
 </html>
