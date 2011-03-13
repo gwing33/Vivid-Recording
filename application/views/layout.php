@@ -16,6 +16,63 @@
         </div>
         
         <div id='player'>
+        
+          <ul>
+            <li>
+              <a></a>
+              <div>
+                <h3>Song Name Here</h3>
+                <h4>Artists Name</h4>
+              </div>
+              <i></i>
+            </li>
+            
+            <li class='previous'>
+              <a></a>
+              <div>
+                <h3>Song Name Here</h3>
+                <h4>Artists Name</h4>
+              </div>
+              <i></i>
+            </li>
+            
+            <li class='paused current'>
+              <a></a>
+              <div>
+                <h3>Song Name Here</h3>
+                <h4>Artists Name</h4>
+              </div>
+              <i></i>
+            </li>
+            
+            <li class='next'>
+              <a></a>
+              <div>
+                <h3>Song Name Here</h3>
+                <h4>Artists Name</h4>
+              </div>
+              <i></i>
+            </li>
+            
+            <li>
+              <a></a>
+              <div>
+                <h3>Song Name Here</h3>
+                <h4>Artists Name</h4>
+              </div>
+              <i></i>
+            </li>
+            
+            <li>
+              <a></a>
+              <div>
+                <h3>Song Name Here</h3>
+                <h4>Artists Name</h4>
+              </div>
+              <i></i>
+            </li>
+          </ul>
+        
         </div>
         
         <ul class='nav'>

@@ -35,7 +35,28 @@ a:hover { color: #0a6812; }
 .header { overflow: none; }
 #logo { padding: 51px 0 0 159px; float: left; }
 
-#player { width: 320px; height: 183px; float: right; position: relative; background: url('/img/player_bg.png') no-repeat; margin: 10px 52px 0 0; }
+#player { width: 320px; height: 183px; float: right; position: relative; background: url('/img/player_bg.png') no-repeat; margin: 10px 52px 0 0; overflow: hidden; }
+#player ul { position: absolute; top: -41px; }
+#player li { width: 320px; height: 38px; margin: 9px 0; }
+#player div { padding-left: 5px; float: left; height: 42px; cursor: pointer; }
+#player h3 { color: #2e2e2e; line-height: 21px; font-size: 14px; white-space: nowrap; }
+#player h4 { color: #888; line-height: 21px; font-weight: normal; font-size: 12px; white-space: nowrap; }
+
+#player a,
+#player i { width: 53px; height: 38px; display: block; cursor: pointer; }
+#player a { float: left; background: url('/img/play.png') 19px 13px no-repeat; }
+#player i { float: right; }
+
+#player li:hover h3 { color: #0a6812; }
+
+#player li.playing a { border-right: 1px solid #c3c3c3; background: url('/img/pause.png') 19px 13px no-repeat; }
+#player li.paused a { border-right: 1px solid #c3c3c3; background: url('/img/play_hover.png') 19px 10px no-repeat; }
+#player li.current i { border-left: 1px solid #c3c3c3; background: url('/img/list.png') 17px 13px no-repeat; }
+#player li.current h3 { color: #0a6812; }
+#player li.current h4 { color: #666; }
+
+#player li.previous i { background: url('/img/previous.png') 19px 13px no-repeat; }
+#player li.next i { background: url('/img/next.png') 19px 13px no-repeat; }
 
 .nav { clear: both; height: 50px; width: 960px; text-align: center; margin: 0 120px; }
 .nav li a { 
