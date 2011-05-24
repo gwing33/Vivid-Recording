@@ -1,3 +1,4 @@
+// Add History Page Controller
 var PageLoader = Backbone.Controller.extend({
   routes: {
     "": "get_page",
@@ -22,3 +23,5 @@ $(function() {
   new PageLoader();
   Backbone.history.start();
 });
+
+$(AudioPlayer);// Initiate the AudioPlayer OnLoad 

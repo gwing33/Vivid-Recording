@@ -7,6 +7,7 @@
   	<script>!window.jQuery && document.write(unescape('%3Cscript src="/js/jquery.js"%3E%3C/script%3E'))</script>
   	<script src="/js/underscore.js"></script>
   	<script src="/js/backbone.js"></script>
+  	<script src="/js/AudioPlayer.js"></script>
   	<script src="/js/app.js"></script>
   	
   	<link rel="stylesheet" href="/css/screen.css" type="text/css" />
